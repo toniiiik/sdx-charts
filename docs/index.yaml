@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  aks-rbac:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-13T17:08:15.318777+02:00"
+    description: Chart that setup RBAC for defined namespace and group IDs for security
+      groups.
+    digest: 3f99639a846d48b3bc015d22c87fb7f061dbc4180a423a9c4228f1c5970908ef
+    name: aks-rbac
+    type: application
+    urls:
+    - https://github.com/toniiiik/sdx-charts/aks-rbac-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-10-13T17:08:15.316797+02:00"
