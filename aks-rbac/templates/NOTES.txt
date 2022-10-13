@@ -1,0 +1,7 @@
+Rbac configured with all priviledges for namespace {{.Release.Namespace}}
+
+rules:
+{{ template "aks-rbac.role.rules" .}}
+
+group IDs:
+{{ .Values.securityGroupIDs}}

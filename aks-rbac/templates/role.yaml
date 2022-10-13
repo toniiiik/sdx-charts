@@ -1,0 +1,7 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: {{ .Release.Namespace }}
+  name: {{ template "aks-rbac.fullname" .}}
+rules:
+{{ include "aks-rbac.role.rules" .}}
