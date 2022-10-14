@@ -73,7 +73,7 @@ Create the name of the service account to use
   verbs: ["pods/logs"]
 - apiGroups: [""] # empty "" api group indicates the core API group
   resources: ["namespaces"]
-  verbs: ["get", "list"]
+  verbs: ["get"]
 - apiGroups: ["*"] # empty "" api group indicates the core API group
   resources: {{ template "aks-rbac.role.resources" . }}
   verbs: ["get", "list", "watch"]
@@ -84,7 +84,7 @@ Create the name of the service account to use
   verbs: ["pods/exec", "pods/logs"]
 - apiGroups: [""] # empty "" api group indicates the core API group
   resources: ["namespaces"]
-  verbs: ["get", "list"]
+  verbs: ["get"]
 - apiGroups: ["*"] # empty "" api group indicates the core API group
   resources: {{ template "aks-rbac.role.resources" . }}
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]

@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ template "aks-rbac.fullname" . }}
+subjects:
+{{- range .Values.securityGroupIDs }}
+- kind: Group
+  name: {{ . }}
+  apiGroup: rbac.authorization.k8s.io
+{{- end }}    
+roleRef:
+  kind: ClusterRole 
+  name: {{ template "aks-rbac.fullname" . }}
+  apiGroup: rbac.authorization.k8s.io
