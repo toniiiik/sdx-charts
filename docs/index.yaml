@@ -3,7 +3,18 @@ entries:
   aks-rbac:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-13T17:18:00.128122+02:00"
+    created: "2022-10-14T12:15:24.664239+02:00"
+    description: Chart that setup RBAC for defined namespace and group IDs for security
+      groups.
+    digest: 905c61157394f4a0926f18b13c93c063b59907e4502fccdb48951adcf8f1ddd6
+    name: aks-rbac
+    type: application
+    urls:
+    - https://toniiiik.github.io/sdx-charts/aks-rbac-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-14T12:15:24.664026+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: 3f99639a846d48b3bc015d22c87fb7f061dbc4180a423a9c4228f1c5970908ef
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://toniiiik.github.io/sdx-charts/aks-rbac-0.0.1.tgz
     version: 0.0.1
-generated: "2022-10-13T17:18:00.124417+02:00"
+generated: "2022-10-14T12:15:24.663082+02:00"
