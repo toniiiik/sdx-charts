@@ -69,8 +69,9 @@ Create the name of the service account to use
 {{- define "aks-rbac.role.rules" -}}
 {{- if eq .Values.access "readonly" }}
 - apiGroups: ["*"] # empty "" api group indicates the core API group
-  resources: ["pods"]
-  verbs: ["pods/logs"]
+  verbs: ["get"]
+  resources: ["pods/logs"]
+  
 - apiGroups: [""] # empty "" api group indicates the core API group
   resources: ["namespaces"]
   verbs: ["get"]
@@ -80,8 +81,10 @@ Create the name of the service account to use
 {{- end }}
 {{- if eq .Values.access "write" }}
 - apiGroups: ["*"] # empty "" api group indicates the core API group
-  resources: ["pods"]
-  verbs: ["pods/exec", "pods/logs"]
+  # resources: ["pods"]
+  # verbs: ["pods/exec", "pods/logs"]
+  verbs: ["get"]
+  resources: ["pods/logs","pods/exec"]
 - apiGroups: [""] # empty "" api group indicates the core API group
   resources: ["namespaces"]
   verbs: ["get"]
