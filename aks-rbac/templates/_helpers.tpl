@@ -70,7 +70,7 @@ Create the name of the service account to use
 {{- if eq .Values.access "readonly" }}
 - apiGroups: ["*"] # empty "" api group indicates the core API group
   verbs: ["get"]
-  resources: ["pods/logs"]
+  resources: ["pods/log"]
   
 - apiGroups: [""] # empty "" api group indicates the core API group
   resources: ["namespaces"]
@@ -84,7 +84,7 @@ Create the name of the service account to use
   # resources: ["pods"]
   # verbs: ["pods/exec", "pods/logs"]
   verbs: ["get"]
-  resources: ["pods/logs","pods/exec"]
+  resources: ["pods/log","pods/exec"]
 - apiGroups: [""] # empty "" api group indicates the core API group
   resources: ["namespaces"]
   verbs: ["get"]
