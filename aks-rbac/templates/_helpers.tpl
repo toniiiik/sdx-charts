@@ -63,7 +63,7 @@ Create the name of the service account to use
 
 
 {{- define "aks-rbac.role.resources" -}}
-["deployments", "replicasets", "pods", "statefulsets", "cronjobs", "jobs", "services", "persistentvolumeclaims", "events", "ingresses", "customresourcedefinitions","poddisruptionbudgets"]
+["deployments", "replicasets", "pods", "statefulsets", "cronjobs", "jobs", "services", "persistentvolumeclaims", "events", "ingresses", "customresourcedefinitions","poddisruptionbudgets","horizontalpodautoscalers"]
 {{- end -}}
 
 {{- define "aks-rbac.role.rules" -}}
