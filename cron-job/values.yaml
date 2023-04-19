@@ -55,16 +55,16 @@ cronjobs:
   # environment variables for all jobs
   env: []
 
-  jobs: 
-    test:
-      schedule: "*/5 * * * *"
-      command:
-        - /bin/sh
-        - -c
-      args:
-        - echo "foo"; ps fauxwww
-      image:
-        repository: alpine
+  jobs: {}
+    # test:
+    #   schedule: "*/5 * * * *"
+    #   command:
+    #     - /bin/sh
+    #     - -c
+    #   args:
+    #     - echo "foo"; ps fauxwww
+    #   image:
+    #     repository: alpine
     # see https://github.com/kubernetes/kubernetes/issues/74848#issuecomment-475178355
     # restartPolicy: Never
     # startingDeadlineSeconds: 60
