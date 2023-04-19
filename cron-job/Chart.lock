@@ -1,6 +1,6 @@
 dependencies:
-- name: cronjobs
-  repository: https://sickhub.github.io/charts
-  version: 0.1.2
-digest: sha256:bfb7002b6be11a7934d8d13c13a37fff787db770a26f2f7108ca4e92f561c926
-generated: "2023-04-19T20:17:36.666169+02:00"
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  version: 1.16.0
+digest: sha256:cd0a73bdd9d5146e1392f5aa4c552822bed8c80f6fb962e56444d342f918e546
+generated: "2023-04-19T21:16:01.92796+02:00"
