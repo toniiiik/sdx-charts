@@ -56,13 +56,16 @@ spec:
       ttlSecondsAfterFinished: {{ .ttlSecondsAfterFinished }}
       {{- end}}
       template:
-        metadata:
+        metadata:          
           {{- with .podAnnotations }}
           annotations:
             {{- toYaml . | nindent 12 }}
           {{- end }}
           labels:
             {{- $chart_selector_labels | nindent 12 }}
+          {{- with .podLabels }}
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
         spec:
           restartPolicy: {{ default "Never" .restartPolicy }}
           imagePullSecrets:

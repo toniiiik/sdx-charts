@@ -55,6 +55,11 @@ env: []
 
 jobs: {}
   # test:
+  #   podAnnotations: 
+  #     customAnnotation: customAnnotationValue
+
+  #   podLabels:  
+  #     customLabel: customLabelValue
   #   schedule: "*/5 * * * *"
   #   volumeMounts:
   #     ebs:
@@ -93,7 +98,6 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {}
 
 podSecurityContext:
   {}

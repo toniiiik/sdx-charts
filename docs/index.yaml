@@ -3,7 +3,7 @@ entries:
   aks-rbac:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.110613+02:00"
+    created: "2023-04-24T15:23:15.439187+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: 936608eae41d748e7b4ca63e3bdf924da42a2177253d6187cec2811e5f8c527a
@@ -14,7 +14,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.110344+02:00"
+    created: "2023-04-24T15:23:15.438471+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: 95aff7cd8e7a5acabbc74c57bae36a3f34809d9835fc83111cd1ba605a0144f6
@@ -25,7 +25,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.110154+02:00"
+    created: "2023-04-24T15:23:15.437281+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: f88d4c5118e47f701de2875a6fe65b0223ebe1449395fd3d446acef4e5559f17
@@ -36,7 +36,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.10994+02:00"
+    created: "2023-04-24T15:23:15.436027+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: ade9390570cd76aba827b361acb4f391a1a0b5d18a6dbe6ab2a87cad98fd2143
@@ -47,7 +47,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.109759+02:00"
+    created: "2023-04-24T15:23:15.435419+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: 905c61157394f4a0926f18b13c93c063b59907e4502fccdb48951adcf8f1ddd6
@@ -58,7 +58,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.109553+02:00"
+    created: "2023-04-24T15:23:15.434839+02:00"
     description: Chart that setup RBAC for defined namespace and group IDs for security
       groups.
     digest: 3f99639a846d48b3bc015d22c87fb7f061dbc4180a423a9c4228f1c5970908ef
@@ -70,7 +70,21 @@ entries:
   cron-job:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-19T21:39:27.112808+02:00"
+    created: "2023-04-24T15:23:15.445299+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.16.0
+    description: A Helm chart for Kubernetes to deploy cronjob
+    digest: ca071c28ee38cbf5a71af3afcd69ba77659315c06cb16c2c71b5c235d3ebb0fb
+    name: cron-job
+    type: application
+    urls:
+    - https://toniiiik.github.io/sdx-charts/cron-job-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-04-24T15:23:15.443395+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -82,4 +96,4 @@ entries:
     urls:
     - https://toniiiik.github.io/sdx-charts/cron-job-0.0.1.tgz
     version: 0.0.1
-generated: "2023-04-19T21:39:27.109194+02:00"
+generated: "2023-04-24T15:23:15.434038+02:00"
